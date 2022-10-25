@@ -23,4 +23,3 @@ elseif game.PlaceId == 3857052864 then
 elseif game.PlaceId == 8717502286 then
 	loadstring(game:HttpGet(g4, true))()
 end
-
