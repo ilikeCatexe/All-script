@@ -4,12 +4,14 @@
     2 = "The Rake Remasted" 
     3 = "The Rake Fan Remake"
     4 = "Find the Pencils"
+    5 = "cart ride around nothing"
 ]]
 
 local g1 = "https://raw.githubusercontent.com/ilikeCatexe/King-Of-The-Hill-Script-Hack-Gui/main/FExecute"
 local g2 = "https://raw.githubusercontent.com/ilikeCatexe/The-Rake-Hack-script/main/README.md"
 local g3 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-The-Rake-Fan-Remake/main/README.md"
 local g4 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-Find-The-Pencils/main/README.md"
+local g5 = "https://raw.githubusercontent.com/ilikeCatexe/cart-ride-around-nothing/main/FExecute"
 local gameid = game.PlaceId
 
 print("GameId is", gameid)
@@ -22,4 +24,6 @@ elseif game.PlaceId == 3857052864 then
 	loadstring(game:HttpGet(g3, true))()
 elseif game.PlaceId == 8717502286 then
 	loadstring(game:HttpGet(g4, true))()
+elseif game.PlaceId == 10660791703 then
+	loadstring(game:HttpGet(g5, true))()
 end
