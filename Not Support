@@ -1,0 +1,32 @@
+if game:GetService("CoreGui"):FindFirstChild("Library") then
+    game:GetService("CoreGui"):FindFirstChild("Library"):Destroy()
+end
+local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/kickTh/New-Ui/main/VLib.txt"))()
+MAINTTL = "PLANG HUB" 
+local win = VLib:Window("", Color3.fromRGB(196, 40, 28))
+
+local Main = win:Tab("Main")
+
+Main:Button("Destroy Gui",function()
+game.CoreGui["Library"]:Destroy()
+end)
+
+Main:Label("-- This Map Not Support --")
+Main:Label("---------------------")
+Main:Label("-- Join Map Support --")
+
+Main:Button("King Of The Hill (Click To Join)",function()
+    game:GetService("TeleportService"):Teleport(3495989665, LocalPlayer)
+end)
+
+Main:Button("The Rake Remasted (Click To Join)",function()
+    game:GetService("TeleportService"):Teleport(2413927524, LocalPlayer)
+end)
+
+Main:Button("The Rake Fan Remake (Click To Join)",function()
+    game:GetService("TeleportService"):Teleport(3857052864, LocalPlayer)
+end)
+
+Main:Button("Find the Pencils (Click To Join)",function()
+    game:GetService("TeleportService"):Teleport(8717502286, LocalPlayer)
+end)
