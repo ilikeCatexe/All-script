@@ -1,5 +1,3 @@
-local Uis = _G.Ui
-
 if game.CoreGui:FindFirstChild("Plang Hub") then
   game.CoreGui:FindFirstChild("Plang Hub"):Destroy()
 end
