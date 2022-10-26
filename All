@@ -6,6 +6,7 @@
     4 = "Find the Pencils"
     5 = "cart ride around nothing"
     6 = "Evade"
+    7 = "Doors"
 ]]
 
 local VirtualUser=game:service'VirtualUser'
@@ -22,6 +23,8 @@ local g3 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-The-Rake-Fan-Rema
 local g4 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-Find-The-Pencils/main/README.md"
 local g5 = "https://raw.githubusercontent.com/ilikeCatexe/cart-ride-around-nothing/main/FExecute"
 local g6 = "https://raw.githubusercontent.com/ilikeCatexe/Evade/main/Evade"
+local g7 = "https://raw.githubusercontent.com/ilikeCatexe/Doors/main/Doors%20in%20game"
+local g7lobby = "https://raw.githubusercontent.com/ilikeCatexe/Doors/main/Doors%20In%20Lobby"
 local gameid = game.PlaceId
 
 print("GameId is", gameid)
@@ -54,4 +57,8 @@ elseif game.PlaceId == 11353532384 then
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 11353528705 then
 	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 6839171747 then
+	loadstring(game:HttpGet(g7, true))() -- Doors In Game
+elseif game.PlaceId == 6516141723 then
+	loadstring(game:HttpGet(g7lobby, true))() -- Doors In Lobby
 end
