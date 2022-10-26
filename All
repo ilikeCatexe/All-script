@@ -5,6 +5,7 @@
     3 = "The Rake Fan Remake"
     4 = "Find the Pencils"
     5 = "cart ride around nothing"
+    6 = "Evade"
 ]]
 
 local g1 = "https://raw.githubusercontent.com/ilikeCatexe/King-Of-The-Hill-Script-Hack-Gui/main/FExecute"
@@ -12,18 +13,35 @@ local g2 = "https://raw.githubusercontent.com/ilikeCatexe/The-Rake-Hack-script/m
 local g3 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-The-Rake-Fan-Remake/main/README.md"
 local g4 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-Find-The-Pencils/main/README.md"
 local g5 = "https://raw.githubusercontent.com/ilikeCatexe/cart-ride-around-nothing/main/FExecute"
+local g6 = "https://raw.githubusercontent.com/ilikeCatexe/Evade/main/Evade"
 local gameid = game.PlaceId
 
 print("GameId is", gameid)
 
 if game.PlaceId == 3495989665 then
-	loadstring(game:HttpGet(g1, true))()
+	loadstring(game:HttpGet(g1, true))() -- King Of The Hill
 elseif game.PlaceId == 2413927524 then
-	loadstring(game:HttpGet(g2, true))()
+	loadstring(game:HttpGet(g2, true))() -- The Rake Remasted
 elseif game.PlaceId == 3857052864 then
-	loadstring(game:HttpGet(g3, true))()
+	loadstring(game:HttpGet(g3, true))() -- The Rake Fan Remake
 elseif game.PlaceId == 8717502286 then
-	loadstring(game:HttpGet(g4, true))()
+	loadstring(game:HttpGet(g4, true))() -- Find the Pencils
 elseif game.PlaceId == 10660791703 then
-	loadstring(game:HttpGet(g5, true))()
+	loadstring(game:HttpGet(g5, true))() -- cart ride around nothing
+elseif game.PlaceId == 9872472334 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 10662542523 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 10324347967 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 10324346056 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 110539706691 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 10808838353 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 11353532384 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
+elseif game.PlaceId == 11353528705 then
+	loadstring(game:HttpGet(g6, true))() -- Evade
 end
