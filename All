@@ -16,6 +16,7 @@ VirtualUser:ClickButton2(Vector2.new())
 end)
 warn("Anti-Afk has Loaded")
 
+local timer = "0.2"
 local notsupport = "https://raw.githubusercontent.com/ilikeCatexe/All-script/main/Not%20Support"
 local g1 = "https://raw.githubusercontent.com/ilikeCatexe/King-Of-The-Hill-Script-Hack-Gui/main/FExecute"
 local g2 = "https://raw.githubusercontent.com/ilikeCatexe/The-Rake-Hack-script/main/README.md"
@@ -32,33 +33,63 @@ print("GameId is", gameid)
 loadstring(game:HttpGet(notsupport, true))() -- Not Support Map
 wait(0.1)
 if game.PlaceId == 3495989665 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g1, true))() -- King Of The Hill
 elseif game.PlaceId == 2413927524 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g2, true))() -- The Rake Remasted
 elseif game.PlaceId == 3857052864 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g3, true))() -- The Rake Fan Remake
 elseif game.PlaceId == 8717502286 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g4, true))() -- Find the Pencils
 elseif game.PlaceId == 10660791703 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g5, true))() -- cart ride around nothing
 elseif game.PlaceId == 9872472334 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 10662542523 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 10324347967 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 10324346056 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 110539706691 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 10808838353 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 11353532384 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 11353528705 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g6, true))() -- Evade
 elseif game.PlaceId == 6839171747 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g7, true))() -- Doors In Game
 elseif game.PlaceId == 6516141723 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
 	loadstring(game:HttpGet(g7lobby, true))() -- Doors In Lobby
 end
