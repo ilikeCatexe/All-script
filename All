@@ -16,7 +16,7 @@ VirtualUser:ClickButton2(Vector2.new())
 end)
 warn("Anti-Afk has Loaded")
 
-local timer = "0.2"
+local timer = "0.1"
 local notsupport = "https://raw.githubusercontent.com/ilikeCatexe/All-script/main/Not%20Support"
 local g1 = "https://raw.githubusercontent.com/ilikeCatexe/King-Of-The-Hill-Script-Hack-Gui/main/FExecute"
 local g2 = "https://raw.githubusercontent.com/ilikeCatexe/The-Rake-Hack-script/main/README.md"
