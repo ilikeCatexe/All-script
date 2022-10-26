@@ -8,6 +8,7 @@
     6 = "Evade"
 ]]
 
+local notsupport = "https://raw.githubusercontent.com/ilikeCatexe/All-script/main/Not%20Support"
 local g1 = "https://raw.githubusercontent.com/ilikeCatexe/King-Of-The-Hill-Script-Hack-Gui/main/FExecute"
 local g2 = "https://raw.githubusercontent.com/ilikeCatexe/The-Rake-Hack-script/main/README.md"
 local g3 = "https://raw.githubusercontent.com/ilikeCatexe/Hack-The-Rake-Fan-Remake/main/README.md"
@@ -18,6 +19,8 @@ local gameid = game.PlaceId
 
 print("GameId is", gameid)
 
+loadstring(game:HttpGet(notsupport, true))() -- Not Support Map
+wait(0.1)
 if game.PlaceId == 3495989665 then
 	loadstring(game:HttpGet(g1, true))() -- King Of The Hill
 elseif game.PlaceId == 2413927524 then
