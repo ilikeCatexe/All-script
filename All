@@ -7,6 +7,7 @@
     5 = "cart ride around nothing"
     6 = "Evade"
     7 = "Doors"
+    8 = "Marvellous Playground"
 ]]
 
 local VirtualUser=game:service'VirtualUser'
@@ -26,6 +27,7 @@ local g5 = "https://raw.githubusercontent.com/ilikeCatexe/cart-ride-around-nothi
 local g6 = "https://raw.githubusercontent.com/ilikeCatexe/Evade/main/Evade"
 local g7 = "https://raw.githubusercontent.com/ilikeCatexe/Doors/main/Doors%20in%20game"
 local g7lobby = "https://raw.githubusercontent.com/ilikeCatexe/Doors/main/Doors%20In%20Lobby"
+local g8 = "https://raw.githubusercontent.com/ilikeCatexe/Marvellous-Playground/main/Marvellous%20Playground"
 local gameid = game.PlaceId
 
 print("GameId is", gameid)
@@ -92,4 +94,8 @@ elseif game.PlaceId == 6516141723 then
         game.CoreGui["Library"]:Destroy()
         wait(timer)
 	loadstring(game:HttpGet(g7lobby, true))() -- Doors In Lobby
+elseif game.PlaceId == 8657766101 then
+        game.CoreGui["Library"]:Destroy()
+        wait(timer)
+	loadstring(game:HttpGet(g8, true))() -- Marvellous Playground
 end
