@@ -26,7 +26,7 @@ local gameid = game.PlaceId
 print("GameId is", gameid)
 
 loadstring(game:HttpGet(notsupport, true))() -- Not Support Map
-wait(0.1)
+wait(0)
 if game.PlaceId == 3495989665 then
         game.CoreGui["Library"]:Destroy()
         wait(timer)
