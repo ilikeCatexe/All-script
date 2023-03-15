@@ -141,7 +141,7 @@ elseif game.PlaceId == 844929123 then
 	loadstring(game:HttpGet(g14, true))() -- Plane Crazy PVP
 elseif game.PlaceId == 12605322913 then
         game.CoreGui["Library"]:Destroy()
-        loadstring(game:HttpGet(G15, true))() -- zeedzad Realplayfc (pc)
+        loadstring(game:HttpGet(g15, true))() -- zeedzad Realplayfc (pc)
 end
 
 wait(timer)
