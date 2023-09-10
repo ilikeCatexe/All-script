@@ -1,0 +1,153 @@
+getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "PLANG HUB",
+   LoadingTitle = "PLANG HUB",
+   LoadingSubtitle = "by Plang",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "PLANG HUB", -- Create a custom folder for your hub/game
+      FileName = "Config_flie"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Sirius Hub",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/sirius)",
+      FileName = "SiriusKey",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "Hello"
+   }
+})
+
+local Tab = Window:CreateTab("Universe Script", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Script")
+
+local Tab = Window:CreateTab("Hack Tool", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Script")
+
+local Tab = Window:CreateTab("Server", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Server")
+
+local Button = Tab:CreateButton({
+   Name = "Copy This Server (JobId,PlaceId)",
+   Callback = function()
+        setclipboard("game:GetService('TeleportService'):TeleportToPlaceInstance("..game.PlaceId..", "..game.JobId..", game:GetService('Players').LocalPlayer)")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Copy JobId",
+   Callback = function()
+        setclipboard(game.JobId)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Copy PlaceId",
+   Callback = function()
+        setclipboard(game.PlaceId)
+   end,
+})
+
+local Label = Tab:CreateLabel("PlaceId : "..game.PlaceId)
+local Label = Tab:CreateLabel("JobId : "..game.JobId)
+
+local Label = Tab:CreateLabel("Join Server")
+
+local Input = Tab:CreateInput({
+   Name = "Input JobId",
+   PlaceholderText = "Input Placeholder",
+   RemoveTextAfterFocusLost = false,
+   Callback = function(Text)
+   job = Text
+   end,
+})
+
+local Input = Tab:CreateInput({
+   Name = "Input PlaceId",
+   PlaceholderText = "Input Placeholder",
+   RemoveTextAfterFocusLost = false,
+   Callback = function(Text)
+   placeidxd = Text
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Join Server (Using JobId,PlaceId)",
+   Callback = function()
+        game:GetService("TeleportService"):TeleportToPlaceInstance(placeidxd, job, game:GetService("Players").LocalPlayer)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Join Server (Using PlaceId)",
+   Callback = function()
+        game:GetService("TeleportService"):Teleport(placeidxd, game:GetService("Players").LocalPlayer)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Rejoin",
+   Callback = function()
+        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ServerHop",
+   Callback = function()
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ServerHop Low Players Server",
+   Callback = function()
+        local Http = game:GetService("HttpService")
+        local TPS = game:GetService("TeleportService")
+        local Api = "https://games.roblox.com/v1/games/"
+
+        local _place = game.PlaceId
+        local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+        function ListServers(cursor)
+        local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+        return Http:JSONDecode(Raw)
+        end
+
+        local Server, Next; repeat
+        local Servers = ListServers(Next)
+        Server = Servers.data[1]
+        Next = Servers.nextPageCursor
+        until Server
+
+        TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Server List",
+   Callback = function()
+        loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+   end,
+})
+
+
+
+local Tab = Window:CreateTab("Settings", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Settings")
+
+local Button = Tab:CreateButton({
+   Name = "Destroy Ui/Unload Script",
+   Callback = function()
+   Rayfield:Destroy()
+   end,
+})
+
