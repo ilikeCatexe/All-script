@@ -2,7 +2,7 @@ getgenv().SecureMode = true
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "PLANG HUB",
+   Name = "PLANG HUB Universe Version",
    LoadingTitle = "PLANG HUB",
    LoadingSubtitle = "by Plang",
    ConfigurationSaving = {
