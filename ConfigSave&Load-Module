@@ -37,7 +37,7 @@ Decode errors: delete or fix the JSON file; defaults will be saved again
 Write errors: ensure the parent folder exists and your environment permits writes
 
 --// Quick start
-local ConfigSystem = loadstring(game:HttpGet(""))()
+local ConfigSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeCatexe/All-script/refs/heads/main/ConfigSave%26Load-Module"))()
 local folder = "HUB-Config"
 local path = folder .. "/Config.json" -- Config.json is a file btw
 local defaults = { Theme = "Dark", Volume = 0.5, Enabled = true } -- You can also use an empty table {} or just leave it nil and also you can use a global variable (e.g. _G.MyDefaults).
